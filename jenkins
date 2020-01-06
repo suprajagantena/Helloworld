@@ -1,0 +1,9 @@
+The concepts of node, stage and step are different:
+
+node specifies where something shall happen. You give a name or a label, and Jenkins runs the block there.
+
+stage structures your script into a high-level sequence. Stages show up as columns in the Pipeline Stage view with average stage times and colours for the stage result.
+
+step is one way to specify what shall happen. sh is of a similar quality, it is a different kind of action. (You can also use build for things that are already specified as projects.)
+
+So steps can reside within nodes, (if they don't, they are executed on the master), and nodes and steps can be structured into an overall sequence with stages.
